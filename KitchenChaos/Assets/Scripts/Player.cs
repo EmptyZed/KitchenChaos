@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -19,7 +20,10 @@ public class Player : MonoBehaviour {
 
         if (canMove) {
             transform.position += moveDir * moveSpeed * Time.deltaTime;
+            Console.WriteLine("Contact!");
         }
+
+        Console.WriteLine("Contact!");
 
         isWalking = moveDir != Vector3.zero;
 
